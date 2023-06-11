@@ -47,16 +47,23 @@ function generateMarkdown(data) {
   const sections= ["Description", "Installation", "Usage", "Contributing", "Tests", "License", "Questions"];
   let markdown= "#" + data.title + "\n";
   markdown += renderLicenseBadge(data.license)+ "\n";
-  
+
+
+  markdown += "## Table of Contents\n";
+  for (let i=0; i<sections.length; i++) {
+    if (! (sections[i] === "License" && data.license === "None")) {
+      markdown += i+1 + ". [" + sections[i] + "](#" + sections[i][0].toLowerCase() + sections[i].substring(1) + ")\n";
+    }
+  }
+  markdown += "\n";
+
+  // add description
+  markdown += "## " + sections[0] + "\n";
+  markdown += data.description + "\n";
+
 
 }
 
-if (license != "None") {
-  licenseSect += "## License\n"
-  licenseSect += "Please see " + renderLicenseLink(license) + " to get detailed information for this license\n";
-}
 
-return licenseSect;
-}
 
 module.exports = generateMarkdown;
