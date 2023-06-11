@@ -61,6 +61,10 @@ function generateMarkdown(data) {
   markdown += "## " + sections[0] + "\n";
   markdown += data.description + "\n";
 
+    // add usage
+    markdown += "## " + sections[2] + "\n";
+    markdown += data.usage + "\n";
+
 
 }
 
