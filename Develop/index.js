@@ -66,7 +66,7 @@ function writeToFile(data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.createPromptModule(questions)
+    inquirer.prompt(questions)
     .then (answers => writeToFile(generateMarkdown(answers)))
 }
 

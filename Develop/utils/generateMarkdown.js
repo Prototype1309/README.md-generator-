@@ -41,12 +41,28 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   let licenseSect= ""; 
 
+// if a license has been selected, create License section
+// with link to license information
+  if (license != "None") {
+    licenseSect += "## License\n"
+    licenseSect += "Please see " + renderLicenseLink(license) + " to get detailed information for this license\n";
+  }
+
+  return licenseSect;
+}
+
+
+
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   const sections= ["Description", "Installation", "Usage", "Contributing", "Tests", "License", "Questions"];
+
   let markdown= "#" + data.title + "\n";
+
   markdown += renderLicenseBadge(data.license)+ "\n";
+
+
 
 
   markdown += "## Table of Contents\n";
@@ -76,8 +92,13 @@ function generateMarkdown(data) {
   // add license
   markdown += renderLicenseSection(data.license) + "\n";
 
+  
+  // add questions
+  markdown += "## " + sections[6] + "\n";
+  markdown += "You can find me [HERE](https://github.com/Prototype1309" + data.username + ") on Github\n";
+  
+  return markdown;
+
 }
-
-
 
 module.exports = generateMarkdown;
