@@ -61,10 +61,20 @@ function generateMarkdown(data) {
   markdown += "## " + sections[0] + "\n";
   markdown += data.description + "\n";
 
-    // add usage
-    markdown += "## " + sections[2] + "\n";
-    markdown += data.usage + "\n";
+  // add usage
+  markdown += "## " + sections[2] + "\n";
+  markdown += data.usage + "\n";
 
+  // add contributing
+  markdown += "## " + sections[3] + "\n";
+  markdown += data.guidelines + "\n";
+  
+  // add testing
+  markdown += "## " + sections[4] + "\n";
+  markdown += data.test + "\n";
+  
+  // add license
+  markdown += renderLicenseSection(data.license) + "\n";
 
 }
 
