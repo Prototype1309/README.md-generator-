@@ -5,16 +5,14 @@ function renderLicenseBadge(license) {
   if(license != "None") {
     badge = "![License Badge](https://shields.io/badge/license-" + license + "-green)";
   }
-// If there is no license, return an empty string
   return badge;
-}
-
-
+};
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   let licenseLink;
+
   // select correct license link for the selected license
   switch(license) {
     case "MIT":
@@ -40,13 +38,22 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  let licenseSect= ""; 
+
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  const sections= ["Description", "Installation", "Usage", "Contributing", "Tests", "License", "Questions"];
+  let Mmarkdown= "#" + data.title + "\n";
+}
 
-`;
+if (license != "None") {
+  licenseSect += "## License\n"
+  licenseSect += "Please see " + renderLicenseLink(license) + " to get detailed information for this license\n";
+}
+
+return licenseSect;
 }
 
 module.exports = generateMarkdown;
