@@ -96,7 +96,7 @@ function generateMarkdown(data) {
   // add questions
   markdown += "## " + sections[6] + "\n";
   markdown += "You can find me [HERE](https://github.com/Prototype1309" + data.username + ") on Github\n";
-  
+  markdown += "Email me at " + data.email + " with any questions.\n"
   return markdown;
 
 }
