@@ -58,7 +58,7 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   const sections= ["Description", "Installation", "Usage", "Contributing", "Tests", "License", "Questions"];
 
-  let markdown= "#" + data.title + "\n";
+  let markdown= "# " + data.title + "\n";
 
   markdown += renderLicenseBadge(data.license)+ "\n";
 
