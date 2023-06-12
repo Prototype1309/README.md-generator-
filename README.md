@@ -9,23 +9,28 @@
 6. [Tests](#tests)
 7. [License](#license)
 8. [Questions](#questions)
-
 ## Description
 This command-line application dynamically generates a professional README.md file from a user's input using the Inquirer package
-## Instalation
- npm install to install the projec
+## Installation
+After cloning this project use: npm install to install the project
 ## Usage
 To run the application type: node index from the project root directory
+A movie of typical usage of this application is available [HERE](https:/github.com/lstillwe/)
 
-## Contribution
+A sample of a generated REAME.md file is [HERE](https://github.com/lstillwe/readme-generator/blob/develop/generated_README.md)
+## Contributing
 Please contribute to this project:
+* [Submit bugs and feature requests](https://github.com/Prototype1309/README.md-generator-/issues), and help us verify as they are checked in
+
 ## Video
 [Walk-though Video Link]
+
 ## Tests
 No test are provided.
-## Licence
+## License
 Please see https://opensource.org/licenses/BSD-3-Clause to get detailed information for this license
-## Contact information
+
+## Questions
 You can find me [HERE](https://github.com/Prototype1309) on Github.
 
-You can email me at simo.hourri@gmail.com if you have any additional questions.
+You can email me at simo.houri@gmail.com if you have any additional questions.
