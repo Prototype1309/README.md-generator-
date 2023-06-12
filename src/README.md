@@ -1,4 +1,4 @@
-# README.md
+# README
 ![License Badge](https://shields.io/badge/license-MIT-green)
 ## Table of Contents
 1. [Description](#description)
@@ -10,16 +10,18 @@
 7. [Questions](#questions)
 
 ## Description
-README.md
+README
+## Installation
+README
 ## Usage
-README.md
+README
 ## Contributing
-README.md
+README
 ## Tests
-README.md
+README
 ## License
 Please see https://mit-license.org/ to get detailed information for this license
 
 ## Questions
-You can find me [HERE](https://github.com/Prototype1309README.md) on Github
-Email me at README.md with any questions.
+You can find me [HERE](https://github.com/prototype1309README) on Github
+You can email me at README if you have any additional questions.
